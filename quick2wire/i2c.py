@@ -10,7 +10,7 @@ from quick2wire.board_revision import revision
 assert sys.version_info.major >= 3, __name__ + " is only supported on Python 3"
 
 
-default_bus = 1 if revision() > 1 else 0
+default_bus = 1 #if revision() > 1 else 0
 
 class I2CMaster(object):
     """Performs I2C I/O transactions on an I2C bus.
